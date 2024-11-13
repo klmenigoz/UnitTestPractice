@@ -10,8 +10,10 @@ using std::string;
   'z' and any ASCII characters are allowed.
 */
 int Password::count_leading_characters(string phrase){
-  // could add an if to check length being 0, and if thats true then return 0 immediately to bypass the bug
-  int repetition = 0;
+  if(phrase.length() == 0){
+    return 0;
+  }
+  int repetition = 1;
   int index = 0;
   while( index < phrase.length()-1 && phrase[index] == phrase[index+1] ){
     repetition++;

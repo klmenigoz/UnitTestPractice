@@ -40,7 +40,7 @@ TEST(PasswordTest, three_letter_password_repeated)	// the name of this second te
 {
 	Password my_password;
 	int actual = my_password.count_leading_characters("aaa");	// 
-	ASSERT_EQ(1, actual);	// asserting that actual is 3 for the repeated 'a'
+	ASSERT_EQ(3, actual);	// asserting that actual is 3 for the repeated 'a'
 }
 
 /////////////////////////////// MIXED CASE //////////////////////////////////////////////
